@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+goals
+{% endblock %}
+
+{% block body %}
+<h1>Total goals</h1>
+{% for item in goals %}
+{{item["name"]}}: {{item["goal"]}}
+<br/>
+{% endfor %}
+<p>
+    <a href="{{url_for('board')}}">Update goals scored</a>
+</p>
+{% endblock %}

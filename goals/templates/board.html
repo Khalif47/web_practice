@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Goals Board
+{% endblock %}
+
+{% block body %}
+<h1>Goals Board</h1>
+<form action="{{ url_for('board') }}" method="post">
+    <input name="aguero" type="number" value="0"/> Aguero
+    <br/>
+    <input name="suarez" type="number" value="0"/>Suarez
+    <br/>
+    <input type="submit" value="update"/>
+</form>
+
+<p>
+    see <a href="{{ url_for('goals')}}">scoreboard</a>
+</p>
+<br/>
+<p>
+    find <a href="{{ url_for('highest')}}">highest</a>
+</p>
+{% endblock %}
+

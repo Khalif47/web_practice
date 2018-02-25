@@ -1,0 +1,1 @@
+print("asrt" in "arts in city")

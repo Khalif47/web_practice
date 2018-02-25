@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Soccer sign up
+{% endblock %}
+
+{% block body %}
+<h1>Register for soccer</h1>
+<form action="{{ url_for('register') }}" method="post">
+    Name: <input name="first" type="text"/>
+    <br/>
+    Last: <input name="last" type="text"/>
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
+{% endblock %}
+
